@@ -1,15 +1,5 @@
 """
-Section 3: Device Temperature Visualizer
-=========================================
-Loads aggregated device telemetry JSON (from Section 2) and generates
-a publication-quality bar chart comparing average temperatures per device.
-
-Addresses all layout, formatting, and edge-case concerns:
-- Auto-handles label rotation & tight layout to prevent label overlap or clipping.
-- Displays exact temperature annotations above each bar.
-- Includes a reference threshold line (80°C filtering cutoff).
-- Handles empty JSON, missing keys, or missing file gracefully.
-- High-resolution 300 DPI output for professional reports.
+Generates a bar chart comparing average temperatures per device from summary JSON.
 """
 
 from __future__ import annotations

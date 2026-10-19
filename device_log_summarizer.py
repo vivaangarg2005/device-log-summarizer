@@ -1,18 +1,6 @@
 """
-Device Log Summarizer CLI Tool
-==============================
-Technical Assessment - Section 2: Core Data Processing Task
-
-Features:
-- Ingests CSV telemetry data (device_id, status, temperature).
-- Aggregates metrics per device:
-    * Total record count
-    * Average temperature (mean)
-    * Total ERROR status count
-- Filters out any devices with average temperature > threshold (default: 80.0).
-- Robust error handling: missing files, malformed rows, non-numeric values, missing headers.
-- Exports results to a clean, formatted JSON file.
-- Prints a polished terminal summary table.
+CLI tool for ingesting device telemetry CSV data, calculating per-device summary
+statistics, filtering by average temperature, and exporting results to JSON.
 """
 
 from __future__ import annotations
